@@ -11,21 +11,26 @@ namespace HolaMundoCS
     {
         public static void Main(string[] args)
         {
-            var p = new Persona();
+            Operaciones.Sumar(5, 9);
+            Persona.AñoActual = 2015;
+            var p = new Alumno();
             p.Nombre = "Luis";
-            p.Edad = 22;
+            p.Edad = 10;
 
             Console.WriteLine(p.Nombre);
 
-            var p2 = new Persona()
+            var p2 = new Alumno()
             {
                 Nombre = "Luis",
                 Edad = 22
 
             };
+            Persona.IncrementarAñoActual(8);
+            p.Detalles(60,años:true);
+
         p2.Detalles();
 
-            Console.WriteLine();
+            Console.ReadLine();
         }
 
     }

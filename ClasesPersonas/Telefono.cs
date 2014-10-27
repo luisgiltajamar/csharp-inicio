@@ -8,6 +8,7 @@ namespace ClasesPersonas
 {
     public class Telefono
     {
+
         public String Marca { get; set; }
         public String Modelo { get; set; }
         public double Precio { get; set; }
