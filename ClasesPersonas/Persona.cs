@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 
 namespace ClasesPersonas
@@ -20,7 +21,8 @@ namespace ClasesPersonas
             set { _edad = value*365; }
         }
 
-        public String Nombre { get; set; }
+
+        public String Nombre {  get;  set; }
 
         public Persona()
         {
@@ -32,7 +34,7 @@ namespace ClasesPersonas
             Edad = edad;
         }
 
-        public void Detalles()
+        public virtual void Detalles()
         {
             Console.WriteLine("Nombre: {0} Edad: {1}",Nombre,Edad);
         }

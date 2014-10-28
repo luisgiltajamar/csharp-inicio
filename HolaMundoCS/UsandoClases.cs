@@ -26,7 +26,7 @@ namespace HolaMundoCS
 
             };
             Persona.IncrementarAñoActual(8);
-            p.Detalles(60,años:true);
+            p.Detalles(60);
 
         p2.Detalles();
 
